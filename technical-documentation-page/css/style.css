@@ -1,0 +1,68 @@
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /*******************************************
+  Navigation bar
+  *******************************************/
+  #navbar {
+    position: fixed;
+    min-width: 280px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-right-color: gray;
+  }
+  
+  #navbar header {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  #navbar a {
+    text-decoration: none;
+    color: black;
+    padding: 1em 1em;
+    border: 0;
+    border-bottom: 2px;
+    border-style: solid;
+    border-collapse: collapse;
+    display: block;
+  }
+  
+  /*******************************************
+  Sections
+  *******************************************/
+  
+  #main-doc {
+    position: absolute;
+    margin: 0 0 2em 300px;
+    padding: 20px;
+  }
+  
+  /*******************************************
+  Responsiveness
+  *******************************************/
+  @media only screen and (max-width: 600px) {
+    #navbar {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      max-height: 200px;
+      border-right: solid;
+      border-right-color: gray;
+      z-index: 1;
+    }
+    
+    #main-doc {
+      position: relative;
+      margin-top: 270px;
+      margin-left: 0;
+      padding: 5px;
+    }
+  
+  }

@@ -1,0 +1,39 @@
+body {
+    background-color: #dcd6f7;
+}
+
+#title {
+  text-align: center;
+}
+
+#main {
+    color: #424874;
+}
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    height: auto;
+}
+
+section {
+  padding: 10% 15%;
+}
+
+h2   {
+    font-size: 1.5rem;
+}
+
+hr {
+    border: none;
+    width: 10%;
+    border: dotted 0.5rem;
+    border-bottom: none;
+    border-color: #424874;
+    width: 10%;
+}
+
+footer {
+    padding: 10% 15%;
+}

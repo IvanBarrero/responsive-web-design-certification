@@ -1,0 +1,47 @@
+body {
+    background-color: #7f78d2;
+    color: #ffe2ff;
+    text-align: center;
+    margin: auto 0;
+}
+
+section {
+    background-color: #481380;
+    color: #efb1ff;
+    width: 95%;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+label {
+    padding-bottom: 0.3rem;
+}
+
+.item {
+    /*width: 90%;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.fieldset-item {
+    justify-content: left;
+    border-width: 0;
+    text-align: left;
+}
+
+.button-item {
+    width: 100%;
+    background-color: #7f78d2;
+    color: #efb1ff;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}

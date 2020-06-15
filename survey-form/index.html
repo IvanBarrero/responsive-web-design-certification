@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header>
+    <h1 id="title">Nature Conservation Survey</h1>
+    <p id="description">We want to know your main interests in nature conservation. We thank you if you take the time to
+      help us know your main concerns on this subject.</p>
+  </header>
+
+  <section>
+    <form id="survey-form">
+      <div class="item">
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Your name">
+      </div>
+      <div class="item">
+        <label id="email-label" for="email">Email:</label>
+        <br>
+        <input type="email" id="email" name="email" required placeholder="Your email">
+      </div>
+      <div class="item">
+        <label id="number-label" for="number">Age:</label>
+        <input type="number" id="number" name="age" required min="18" max="150" placeholder="Your age (number)">
+      </div>
+      <div class="item">
+        <label for="dropdown">Select your main conservation concern:</label>
+        <select id="dropdown">
+          <option value="">--Choose one option--</option>
+          <option value="deforestation">Deforestation</option>
+          <option value="biodiversity">Biodeversity Loss</option>
+          <option value="habitat">Habitat degradation and loss</option>
+          <option value="climate">Climate Change</option>
+        </select>
+      </div>
+      <fieldset class="item fieldset-item">
+        <legend>What is your main source of conservation-related information?</legend>
+        <label for="tv-info"><input id="tv-info" type="radio" name="info-source" value="tv">TV</label>
+        <label for="print-info"><input id="print-info" type="radio" name="info-source" value="print">Printed Media</label>
+        <label for="social-info"><input id="social-info" type="radio" name="info-source" value="social-nw">Social Netwoorks</label>
+        <label for="web-info"><input id="web-info" type="radio" name="info-source" value="web">Web Pages</label>
+        <label for="other-info"><input id="other-info" type="radio" name="info-source" value="other">Other</label>
+      </fieldset>
+      <fieldset class="item fieldset-item">
+        <legend>What kind of conservation action would you be interested to get involved in?</legend>
+        <label for="volunteering-action"><input id="volunteering-action" type="checkbox" name="action-involved" value="volunteering">Volunteering</label>
+        <label for="donating-action"><input id="volunteering-action" type="checkbox" name="action-involved" value="donating">Donating</label>
+        <label for="ecotourism-action"><input id="ecotourism-action" type="checkbox" name="action-involved" value="ecotourism">Ecotourism</label>
+      </fieldset>
+      <div class="item">
+        <label for="comments">Additional comments:</label>
+        <textarea id="comments" rows="3" cols="30"></textarea>
+      </div>
+      <button class="item button-item" id="submit" type="submit">Submit</button>
+    </form>
+  </section>
+</body>
+
+</html>
