@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif, Haettenschweiler,
+    "Arial Narrow Bold", sans-serif;
+  background: linear-gradient(45deg, gray, black);
+  color: white;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+  color: white;
+}
+
+
+/********************************************
+Navigation Bar
+********************************************/
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  top: 0;
+  left: 0;
+  height: 80px;
+  background-color: #900c3f;
+  z-index: 1;
+}
+
+.top-stick {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+#navbar li {
+  padding: 1rem;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+/********************************************
+  Welcome Section
+  ********************************************/
+#welcome-section {
+  position: relative;
+  top: 80px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-section h1 {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+#welcome-section p {
+  font-size: large;
+}
+
+/********************************************
+ Projects Section
+*********************************************/
+
+#projects {
+  background-color: #162447;
+}
+
+.project-tile {
+    height: 250px;
+    width: 350px;
+  }
+  
+  .project-tile img {
+    height: 180px;
+    width: 305px;
+  }
+  
+  .container {
+  display: grid;
+  justify-items: stretch;
+  gap: 1rem;
+  padding: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  margin: auto;
+}
+
+/********************************************
+ Projects Section
+*********************************************/
+
+#contact {
+  padding: 20px 10px;
+  background-color: #1b1b2f;
+}
